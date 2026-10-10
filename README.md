@@ -51,6 +51,10 @@ O plano gratuito atual inclui 100 mil chamadas Worker por dia; D1 inclui 5 milh�
 
 As artes SVG ficam em `materials/social`. Para gerar cópias físicas dos downloads do site em `materials/downloads`, execute `npm run materials:generate`.
 
+## Mapa de unidades de saúde
+
+A busca por CEP ou cidade roda no navegador, sem custo: Leaflet + OpenStreetMap (mapa), ViaCEP/Nominatim (geocodificação) e Overpass API (unidades próximas, com fallback entre servidores). Prioriza UBS, CAPS e UPA num raio de 5 km.
+
 ## Rotas
 
 - `GET /api/health`: verifica se o servidor está ativo
