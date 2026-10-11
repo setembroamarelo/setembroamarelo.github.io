@@ -61,7 +61,7 @@ O botão flutuante **Acessibilidade**, no canto inferior esquerdo, abre essas op
 
 A biblioteca aponta para Ministério da Saúde e CVV, além dos materiais do projeto. Para localização oficial de CAPS/UBS, use a consulta externa do CNES por município. O mapa integrado continua sendo complementar, com dados colaborativos do OpenStreetMap, não oficiais. A seção **Privacidade e uso de dados** descreve serviços externos e armazenamento.
 
-A seção **Sinais & Guias** inclui uma galeria responsiva de acolhimento com as imagens locais `img/img1.jpeg` a `img/img4.jpeg`, legendas educativas e textos alternativos. As imagens são apresentadas como ilustrações, não como registros de pessoas atendidas ou depoimentos reais.
+A seção **Sinais & Guias** inclui uma galeria responsiva de acolhimento com quatro imagens locais da pasta `img`, uma frase de apoio abaixo de cada foto e textos alternativos. As imagens são apresentadas como ilustrações, não como registros de pessoas atendidas ou depoimentos reais.
 
 Além de responder no chat, o assistente pode sugerir navegação dentro do site. A API pode retornar `action` em `POST /api/chat` com um destes valores:
 
