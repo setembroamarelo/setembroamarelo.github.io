@@ -366,6 +366,43 @@ body {
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid > * { min-width: 0; overflow-wrap: anywhere; }
 
+.guide-gallery {
+    margin-bottom: 40px;
+}
+
+.guide-gallery-grid {
+    margin-top: 24px;
+}
+
+.guide-image-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--card-bg);
+}
+
+.guide-image-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.guide-image-card figcaption {
+    padding: 20px;
+}
+
+.guide-image-card h4 {
+    font-size: 1.125rem;
+    margin-bottom: 8px;
+}
+
+.guide-image-card p {
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
 /* --- TELA "PRECISO DE AJUDA" --- */
 .cvv-banner {
     background: linear-gradient(135deg, #1E1B4B, #312E81);
