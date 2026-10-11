@@ -49,6 +49,20 @@ Para publicar a API sem Render:
 
 O plano gratuito atual inclui 100 mil chamadas Worker por dia; D1 inclui 5 milhões de linhas lidas por dia, 100 mil escritas por dia e 5 GB de armazenamento. Cotas excedidas podem suspender consultas até a renovação diária.
 
+## IA guiando a navegação do site
+
+O atalho **Conversar** na página inicial abre o chat com IA, rola até ele e coloca o foco no campo de mensagem. A opção **Conversar com IA** na Central de Apoio faz o mesmo; abrir novamente preserva a conversa e não fecha o chat. As respostas usam a API configurada em `API_BASE_URL`; o assistente não substitui atendimento psicológico nem o CVV.
+
+Além de responder no chat, o assistente pode sugerir navegação dentro do site. A API pode retornar `action` em `POST /api/chat` com um destes valores:
+
+- `ajuda`: rola para a seção de contatos e serviços de apoio
+- `respiracao`: rola para o exercício de respiração e inicia automaticamente o ciclo 4-4-4
+- `sinais`: rola para sinais de alerta
+- `mural`: rola para o mural da comunidade
+- `materiais`: rola para materiais de apoio
+
+Quando `action` é retornada, a interface faz rolagem suave e destaca visualmente o bloco correspondente.
+
 As artes SVG ficam em `materials/social`. Para gerar cópias físicas dos downloads do site em `materials/downloads`, execute `npm run materials:generate`.
 
 ## Mapa de unidades de saúde
